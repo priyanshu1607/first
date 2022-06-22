@@ -1,0 +1,191 @@
+* {
+    margin: 0 0;
+    /* position: relative; */
+    padding: 0 0;
+    font-family: "Work Sans", arial, sans-serif;
+   
+
+}
+
+#flexbox {
+    font-size: 10;
+}
+
+:root {
+    --color: startingcolor 2s 1;
+    --Updown: starting 2s 1;
+    --tans: all 3s;
+}
+
+@keyframes starting {
+    from {
+        top: 2ex;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes startingcolor {
+    from {
+
+        color: transparent;
+    }
+
+    to {
+        color: #c69fe5;
+
+    }
+}
+
+body {
+    background-color: black;
+
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: center;
+
+}
+
+#navbar::before {
+    content: "";
+    position: static;
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li a {
+    font-size: larger;
+    text-decoration: none;
+    color: #c69fe5;
+    animation: var(--color)
+}
+
+
+#navbar ul li a:hover {
+    color: black;
+}
+
+#navbar ul {
+    position: absolute;
+    left: auto;
+    right: 12%;
+    left: auto;
+
+
+    animation: var(--Updown)
+}
+
+
+a[href="Home"] {
+    display: flex;
+    position: absolute;
+    right: 1000px;
+    left: auto;
+}
+
+#navbar ul li {
+    margin: 10px 0px;
+    display: inline-block;
+    padding: 10px 7px;
+}
+
+.mid div {
+    left: 300px;
+    margin: 60px 20px;
+    position: absolute;
+    color: #c69fe5;
+    top: 20%;
+    right: 40%;
+    animation: var(--color);
+
+}
+
+.mid div h1 {
+    margin-bottom: 20px;
+}
+
+#flexbox {
+
+    display: flex;
+    bottom: 96px;
+    background-color: white;
+    position: relative;
+    margin: 0 100px;
+}
+
+img {
+    /* display: block; */
+    margin: 10px;
+    filter: invert(100%);
+    height: 100px;
+    width: 100px;
+
+}
+
+.imgbox {
+    text-align: left;
+    margin: 10px;
+
+}
+
+#tran {
+    background-color: #635a73;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+.trans {
+    display: flex;
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    margin: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    transition: var(--tans)
+}
+
+#tran1:hover {
+    transform: rotate(360deg);
+
+}
+
+#tran2:hover {
+    transform: skew(40deg);
+}
+
+#tran3:hover {
+    opacity: 0;
+}
+
+button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+button:hover {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#bot {
+
+    text-align: center;
+
+}
