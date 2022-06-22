@@ -112,6 +112,8 @@ a[href="Home"] {
 }
 
 .mid div h1 {
+     background-color: white;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
